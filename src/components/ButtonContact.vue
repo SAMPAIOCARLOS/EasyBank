@@ -14,10 +14,10 @@
 button {
   background: linear-gradient(45deg, rgb(66, 211, 182), rgb(94, 239, 210));
   border: none;
-  border-radius: 30px;
-  padding: 15px 30px;
+  border-radius: 2vw;
+  padding: 1vw 2vw;
   color: white;
-  font-size: 16px;
+  font-size: 1vw;
   cursor: pointer;
   transition: all 0.5s;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
@@ -45,11 +45,24 @@ button {
   animation: button-appear 0.5s ease;
 }
 
+@media(max-width: 1200px) {
+  button {
+    padding: 1vw 3vw;
+    font-size: 2vw;
+  }
+}
 
+@media(max-width: 850px) {
+  button {
+    padding: 2vw 4vw;
+    font-size: 2.5vw;
+  }
+}
 
-
-
-
-
-
+@media(max-width: 500px) {
+  button {
+    padding: 2vw 7vw;
+    font-size: 3.5vw;
+  }
+}
 </style>

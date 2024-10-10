@@ -8,8 +8,8 @@ import ListFull from './ListFull.vue';
     data() {
         return {
             itens_nav_list: [
-                {name: 'Home', path: '#section2'},
-                {name: 'About', path: '#'},
+                {name: 'Home', path: '#container_content_header'},
+                {name: 'About', path: '#container_about'},
                 {name: 'Contact', path: '#'},
                 {name: 'blog', path: '#'},
                 {name: 'Careers', path: '#'}
@@ -61,9 +61,8 @@ import ListFull from './ListFull.vue';
 <style scoped>
 #container_center_main_nav {
     background-color: #ffffff;
-    position: fixed;
+    /* position: fixed; */
     width: 100%;
-    z-index: 1000;
 }
 nav {
     width: 100%;
@@ -72,9 +71,13 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    z-index: 1000;
 }
 
-
+#container_logo > img {
+    /* border: 2px solid red; */
+    width: 13vw;
+}
 
 
 
@@ -88,9 +91,9 @@ nav {
     z-index: 1000;
 }
 .hamburguer.active {
-    /* position: fixed; */
+    position: fixed;
     top: 3%;
-    left: 94%;
+    left: 90%;
 }
 
 .line-span {
@@ -133,6 +136,14 @@ nav {
 @media(max-width: 700px) {
     #list_nav {
         display: none;
+    }
+
+    #container_logo > img {
+        width: 30vw;
+    }
+
+    nav {
+        height: 10vh;
     }
 }
 </style>

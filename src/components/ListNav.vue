@@ -28,12 +28,17 @@ export default {
     color: #00000080;
     cursor: pointer;
     text-decoration: none;
+    font-size: 1.2vw;
 }
 .item_li:hover {
     border-bottom: 3px solid rgb(21, 197, 162);
     color: #000000;
 }
-
+@media(max-width: 900px) {
+    .item_li {
+        font-size: 2vw;
+    }
+}
 @media(max-width: 700px) {
     .item_li {
         font-size: 3vw;
