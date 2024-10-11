@@ -2,7 +2,7 @@
     export default {
         name: 'CardAbout',
         props: {
-            data_cards_about: {type: Object, required: true}
+            data_cards_about: {type: Array, required: true}
         }
     }
 </script>
