@@ -3,6 +3,20 @@
         name: 'Blog',
         props: {
             data_cards_blog: { type: Array, required: true }
+        },
+        methods: {
+            router_blog(item_card_blog) {
+                alert(`teste ${item_card_blog.id}`)
+                this.$router.push({ 
+                    name: 'DetailsBlog',
+                    params: { id: item_card_blog.id },
+                    query: { 
+                        text_span: item_card_blog.text_span,
+                        title: item_card_blog.title, 
+                        description: item_card_blog.text_content 
+                    }
+                 });
+            }
         }
     }
 </script>
@@ -16,7 +30,7 @@
                 </aside>
 
                 <aside id="container_cards_blog">
-                    <div class="card_blog" v-for="item_card_blog in data_cards_blog" :key="item_card_blog.text_span">
+                    <div class="card_blog" v-for="item_card_blog in data_cards_blog" :key="item_card_blog.text_span" @click="router_blog(item_card_blog)">
                         <div class="box_img_blog">
                             <img :src="item_card_blog.url_img" alt="">
                         </div>
@@ -62,7 +76,7 @@ h1 {
     /* border: 2px solid red; */
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     gap: 1vw;
     flex-wrap: wrap;
     padding-bottom: 5vw;
@@ -99,10 +113,71 @@ h1 {
     background-color: #ffffff;
     padding: 2vw;
 }
+span {
+    font-size: 0.8vw;
+}
 h3 {
     transition: all 0.3s;
+    font-size: 1.2vw;
 }
 h3:hover {
     color: rgb(66, 211, 182);
+}
+
+p {
+    font-size: 1vw;
+}
+
+@media(max-width: 1200px) {
+span {
+    font-size: 1vw;
+}
+h3 {
+    transition: all 0.3s;
+    font-size: 1.5vw;
+}
+
+p {
+    font-size: 1.2vw;
+}
+}
+
+@media(max-width: 961px) {
+    .card_blog {
+        width: 45%;
+    }
+
+    span {
+        font-size: 1.4vw;
+    }
+    h3 {
+        transition: all 0.3s;
+        font-size: 2vw;
+    }
+
+    p {
+        font-size: 1.5vw;
+    }
+    }
+
+@media(max-width: 632px) {
+    .card_blog {
+        width: 75%;
+    }
+
+    span {
+        font-size: 2vw;
+    }
+    h3 {
+        transition: all 0.3s;
+        font-size: 3vw;
+    }
+
+    p {
+        font-size: 2.5vw;
+    }
+    .text_content_blog {
+        gap: 3vw;
+    }
 }
 </style>

@@ -3,13 +3,21 @@ export default {
     name: 'ListNav',
     props: {
         itens_nav_list: {type: Object, required: true}
+    },
+    methods: {
+        router_contact(name) {
+            if(name === 'Contact') {
+                this.$router.push({ name: 'Contact', params: { name } });
+            }
+            
+        }
     }
 }
 </script>
 
 <template>
     <ul id="list_nav">
-        <li v-for="i_navList in itens_nav_list" :key="i_navList.name">
+        <li v-for="i_navList in itens_nav_list" :key="i_navList.name" @click="router_contact(i_navList.name)">
             <a :href="i_navList.path" class="item_li">{{ i_navList.name }}</a>
         </li>
     </ul>

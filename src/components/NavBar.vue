@@ -2,19 +2,21 @@
 import ButtonContact from './ButtonContact.vue';
 import ListNav from './ListNav.vue';
 import ListFull from './ListFull.vue';
+import Logo from './Logo.vue';
   export default {
     name: 'NavBar',
-    components: { ButtonContact, ListNav, ListFull },
+    components: { ButtonContact, ListNav, ListFull, Logo },
     data() {
         return {
             itens_nav_list: [
                 {name: 'Home', path: '#container_content_header'},
                 {name: 'About', path: '#container_about'},
-                {name: 'Contact', path: '#'},
-                {name: 'blog', path: '#'},
+                {name: 'blog', path: '#container_blog'},
+                {name: 'Contact'},
                 {name: 'Careers', path: '#'}
             ],
             show_listFull: false,
+            path_img_logo: '/src/assets/images/logo.svg'
         }
     },
     methods: {
@@ -38,9 +40,7 @@ import ListFull from './ListFull.vue';
     <div id="container_center_main_nav">
         <div class="container_center_main">
             <nav>
-                <div id="container_logo">
-                    <img src="/src/assets/images/logo.svg" alt="">
-                </div>
+                <Logo :path_img_logo="path_img_logo"/>
 
                 <ListNav :itens_nav_list="itens_nav_list"/>
                 
@@ -74,16 +74,7 @@ nav {
     z-index: 1000;
 }
 
-#container_logo > img {
-    /* border: 2px solid red; */
-    width: 13vw;
-}
-
-
-
-
-
-
+/*Config menu hamburguer*/
 .hamburguer {
     display: none;
     flex-direction: column;
@@ -138,9 +129,7 @@ nav {
         display: none;
     }
 
-    #container_logo > img {
-        width: 30vw;
-    }
+    
 
     nav {
         height: 10vh;
