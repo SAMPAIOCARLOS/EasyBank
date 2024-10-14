@@ -21,7 +21,7 @@
 
 <style scoped>
 #container_icons_social {
-    border: 1px solid red;
+    /* border: 1px solid red; */
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -42,5 +42,26 @@ li {
 li:hover {
     color: rgb(66, 211, 182);
     scale: 1.2;
+}
+
+@media(max-width: 950px) {
+    li {
+        font-size: 3vw;
+    }
+}
+
+@media(max-width: 700px) {
+    ul {
+        width: 50%;
+    }
+}
+
+@media(max-width: 500px) {
+    ul {
+        width: 70%;
+    }
+    li {
+        font-size: 5vw;
+    }
 }
 </style>

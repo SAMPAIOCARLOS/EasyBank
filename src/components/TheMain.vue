@@ -55,22 +55,22 @@ import Blog from './Blog.vue';
             url_img: '/src/assets/images/image-confetti.jpg',
             text_span: 'By Claire Robinson',
             title: 'Our invite-only Beta accounts are now live!',
-            text_content: 'After a lot of hard work by the whole team, we\'re excited to launch our closed beta. It\'s easy to request an invite through the site...'
+            text_content: 'After a lot of hard work by the whole team, we\'re excited to launch our closed beta. It\'s easy to request an invite through the site...    After a lot of hard work by the whole team, we\'re excited to launch our closed beta. It\'s easy to request an invite through the site...'
           },
-          {
-            id: 5,
-            url_img: '/src/assets/images/image-confetti.jpg',
-            text_span: 'By Claire Robinson',
-            title: 'Our invite-only Beta accounts are now live!',
-            text_content: 'After a lot of hard work by the whole team, we\'re excited to launch our closed beta. It\'s easy to request an invite through the site...'
-          },
-          {
-            id: 6,
-            url_img: '/src/assets/images/image-confetti.jpg',
-            text_span: 'By Claire Robinson',
-            title: 'Our invite-only Beta accounts are now live!',
-            text_content: 'After a lot of hard work by the whole team, we\'re excited to launch our closed beta. It\'s easy to request an invite through the site...'
-          }
+          // {
+          //   id: 5,
+          //   url_img: '/src/assets/images/image-confetti.jpg',
+          //   text_span: 'By Claire Robinson',
+          //   title: 'Our invite-only Beta accounts are now live!',
+          //   text_content: 'After a lot of hard work by the whole team, we\'re excited to launch our closed beta. It\'s easy to request an invite through the site...'
+          // },
+          // {
+          //   id: 6,
+          //   url_img: '/src/assets/images/image-confetti.jpg',
+          //   text_span: 'By Claire Robinson',
+          //   title: 'Our invite-only Beta accounts are now live!',
+          //   text_content: 'After a lot of hard work by the whole team, we\'re excited to launch our closed beta. It\'s easy to request an invite through the site...'
+          // }
         ]
       }
     }

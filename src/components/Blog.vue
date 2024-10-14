@@ -6,11 +6,11 @@
         },
         methods: {
             router_blog(item_card_blog) {
-                alert(`teste ${item_card_blog.id}`)
                 this.$router.push({ 
                     name: 'DetailsBlog',
                     params: { id: item_card_blog.id },
                     query: { 
+                        img_card: item_card_blog.url_img,
                         text_span: item_card_blog.text_span,
                         title: item_card_blog.title, 
                         description: item_card_blog.text_content 

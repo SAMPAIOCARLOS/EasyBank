@@ -9,9 +9,9 @@ import Logo from './Logo.vue';
     data() {
         return {
             itens_nav_list: [
-                {name: 'Home', path: '#container_content_header'},
-                {name: 'About', path: '#container_about'},
-                {name: 'blog', path: '#container_blog'},
+                {name: 'Home', path: 'http://localhost:5173/#container_content_header'},
+                {name: 'About', path: 'http://localhost:5173/#container_about'},
+                {name: 'blog', path: 'http://localhost:5173/#container_blog'},
                 {name: 'Contact'},
                 {name: 'Careers', path: '#'}
             ],
