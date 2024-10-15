@@ -17,7 +17,7 @@ import ButtonContact from './ButtonContact.vue';
 
             <div id="box_left_header">
               <div id="box_text_header">
-                <h1>Next generation digital banking</h1>
+                <h1>Next generation digital Banking</h1>
 
                 <p>Take your financial life online. Your Easybank account will be a one-stop-shop for spending, saving. budgeting, investing, and much more.</p>
 
