@@ -1,6 +1,9 @@
 <script>
 import About from './About.vue';
 import Blog from './Blog.vue';
+
+import { getImageUrl } from '../utils/imageHelper.js';
+
   export default {
     name: 'TheMain',
     components: { About, Blog },
@@ -8,8 +11,8 @@ import Blog from './Blog.vue';
       return {
         data_cards_about: [
           {
-            url_img: '/src/assets/images/icon-online.svg',
-            title: 'Online Banking',
+            url_img: getImageUrl('icon-online.svg'),
+            title: 'Online1 Banking',
             text_content: "Our modern web and mobile applications allow you to keep track of your finances wherever you are in the world."
           },
           {

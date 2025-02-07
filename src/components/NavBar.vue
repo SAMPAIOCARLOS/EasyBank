@@ -95,10 +95,6 @@ nav {
     transition: 0.5s;
 }
 
-
-
-
-
 .hamburguer.active .line-span:nth-child(2) {
     opacity: 0;
     transition: 0.3s;
